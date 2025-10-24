@@ -35,7 +35,7 @@
 
   1. Download `src.zip` from the latest release
   2. Extract to your desired location
-  3. Run `PS_toolbox.exe` (Windows) or `PS_toolbox` (Linux)
+  3. Set software installation path in the QGIS plugin
 
   For command-line usage:
   ```bash
