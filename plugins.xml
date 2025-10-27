@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="plugins.xsl" ?>
+<plugins>
+    <pyqgis_plugin name="PS-Toolbox-IRIDE" version="0.7.92">
+        <description><![CDATA[PS-Toolbox interface]]></description>
+        <about><![CDATA[This plugin serves as a QGIS interface for the PS-Toolbox software from NHAZCA S.r.l.]]></about>
+        <version>0.7.92</version>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <qgis_maximum_version>3.99</qgis_maximum_version>
+        <homepage><![CDATA[https://www.nhazca.com]]></homepage>
+        <file_name>PSToolbox-IRIDE.zip</file_name>
+        <author_name><![CDATA[Michele Gaeta and Santiago Giraldo (NHAZCA S.r.l.)]]></author_name>
+        <download_url>https://github.com/NHAZCA/ps_toolbox_releases/releases/latest/download/PSToolbox-IRIDE.zip</download_url>
+        <experimental>True</experimental>
+        <deprecated>False</deprecated>
+        <server>False</server>
+    </pyqgis_plugin>
+</plugins>
