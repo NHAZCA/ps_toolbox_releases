@@ -22,6 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Updated Format module parameter structure
 
+### Fixed
+- **License activation**: Fixed PowerShell UUID retrieval failing in compiled executables by using full PowerShell path, `shell=False`, execution policy bypass flags, and proper console window suppression for frozen apps
+
 ### Technical
 - Format/core.py: Added `analysis_type` and `analysis_version` parameters
 - Format/core.py: Dynamic analysis suffix in filename generation (lines 1058-1063)
