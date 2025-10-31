@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="plugins.xsl" ?>
 <plugins>
-    <pyqgis_plugin name="PS-Toolbox-IRIDE" version="0.7.92">
+    <pyqgis_plugin name="PS-Toolbox-IRIDE" version="0.7.93">
         <description><![CDATA[PS-Toolbox interface]]></description>
         <about><![CDATA[This plugin serves as a QGIS interface for the PS-Toolbox software from NHAZCA S.r.l.]]></about>
         <version>0.7.92</version>

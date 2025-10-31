@@ -6,6 +6,15 @@ All notable changes to PS Toolbox will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.98] - 2025-10-31
+
+### Added
+- New Reference Point: now handle data formatted with ARPA style
+- New Reference Point: automatic update of REF_POINT column values
+
+### Changed
+- New Icons for the New Reference Point tool
+
 ## [0.11.97] - 2025-10-23
 
 ### Added
