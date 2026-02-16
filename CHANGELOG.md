@@ -6,6 +6,19 @@ All notable changes to PS Toolbox will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.99] - 2026-02-16
+
+### Added
+- Interferometric Sections: PS velocity points plotted on DEM topographic profile at interpolated elevation, colored by velocity
+
+### Fixed
+- Datafusion: Fixed empty output when no DEM is provided by conditionally selecting model based on DEM availability
+- Plugin: Replaced deprecated boolean `QgsRubberBand()` geometry type with `QgsWkbTypes.LineGeometry`
+
+### Changed
+- Updater now points to GitHub releases
+- Replaced deprecated `wmic` command with CIM method for hardware identification
+
 ## [0.11.98] - 2025-10-31
 
 ### Added
