@@ -6,6 +6,28 @@ All notable changes to PS Toolbox will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2026-02-27
+
+### Added
+- Add version suffix to ARPA output filenames
+- Add DEM section point aggregation with distance-weighted mean velocity.
+- Add velocity-mode CSV export to sections with X, velocity, and DEM elevation columns. Remove old generic CSV writer, properly close shapefile writer after processing.
+- Add --changelog option to release.py for custom changelog files. When provided, reads the changelog body from a markdown file instead of auto-generating from git commits. The version header and date are added automatically.
+- Add release automation script and workflow documentation. `release.py` automates post-build release: changelog generation from git commits, plugins.xml update, git tagging, and GitHub release creation with artifact uploads. Supports --dry-run preview mode.
+- Add clean command to setup.py to remove Cython build artifacts. Supports; `python setup.py clean` (standalone); `python setup.py b clean` (build then clean). Removes .pyd, .c files from module directories and build/ folder.
+
+### Fixed
+- Fix Datafusion empty output when no DEM is provided.  Conditionally select model (n_unknown) based on DEM availability. With DEM use 12 parameter model (3D strain tensor). Without DEM use 6 parameter model (2D displ gradients).
+
+### Changed
+- Change DEM overlay bin size to spacing // 3 for finer resolution
+- Use half DEM pixel spacing as bin size for DEM overlay with small markers and alpha
+- Plot velocity PS points on DEM topographic profile. When a DEM is provided in velocity output mode, PS points are placed at their interpolated elevation on the profile line (colored by velocity) instead of on a separate twin axis. No-DEM and displacement modes unchanged.
+- grep permission for claude code
+- Plugin: Update ARPA glob pattern to match new filename with version suffix
+- Plugin: Replace deprecated boolean QgsRubberBand geometry type with QgsWkbTypes.LineGeometry
+
+
 ## [0.11.99] - 2026-02-16
 
 ### Added
