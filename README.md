@@ -16,7 +16,12 @@
      - Parameter configuration tools
      - Processing workflow integration
 
-  2. **src.zip** - Core Processing Engine
+  2. **src_win.zip** - Core Processing Engine (Windows)
+     - Standalone executable
+     - Command-line interface
+     - All processing modules
+
+  3. **src_ubu.zip** - Core Processing Engine (Ubuntu/Linux)
      - Standalone executable
      - Command-line interface
      - All processing modules
@@ -33,20 +38,23 @@
 
   ### Core Engine Installation
 
-  1. Download `src.zip` from the latest release
+  1. Download `src_win.zip` (Windows) or `src_ubu.zip` (Ubuntu/Linux) from the latest release
   2. Extract to your desired location
   3. Set software installation path in the QGIS plugin
 
   For command-line usage:
   ```bash
-  # View help
-  PS_toolbox.exe --help
+  # View help (Windows / Linux)
+  PS_toolbox.exe --help        # Windows
+  ./PS_toolbox --help           # Linux
 
   # Run with parameters file
-  PS_toolbox.exe -p <processing_type> -f <parameters.json>
+  PS_toolbox.exe -p <processing_type> -f <parameters.json>    # Windows
+  ./PS_toolbox -p <processing_type> -f <parameters.json>       # Linux
 
   # Show version
-  PS_toolbox.exe -v
+  PS_toolbox.exe -v             # Windows
+  ./PS_toolbox -v               # Linux
 
   📋 System Requirements
 
