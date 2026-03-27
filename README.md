@@ -5,7 +5,7 @@ Public releases for **PS Toolbox**, a Persistent Scatterers (PS) data post-proce
 
 ## Downloads
 
-Download the latest version from the [Releases page](https://github.com/NHAZCA/ps_toolbox_releases/releases).
+Download the latest version from the [Releases page](https://github.com/NHAZCA/ps_toolbox_releases/releases/latest).
 
 ### Available Components
 
