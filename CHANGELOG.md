@@ -6,6 +6,23 @@ All notable changes to PS Toolbox will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.1] - 2026-04-01
+
+### Added
+- Add Linux build support
+- Plugin: Add config file picker widgets to export time series dialog
+- Plugin: Add ExportConfig class for time series export plot configuration
+- Plugin: Add 60s timeout to subprocess wait to prevent UI freeze
+- Plugin: Support platform-specific download asset names (src_win.zip / src_ubu.zip)
+
+### Fixed
+- Plugin: Fix progress bar TypeError: cast percentage to int before emit
+- Plugin: Fix code review issues: error handling, unused import, x-label default
+
+### Changed
+- Plugin: Integrate ExportConfig into export dialog and refactor Export worker
+
+
 ## [0.12.0] - 2026-02-27
 
 ### Added
