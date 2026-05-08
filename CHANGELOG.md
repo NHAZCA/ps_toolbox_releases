@@ -6,6 +6,27 @@ All notable changes to PS Toolbox will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.2] - 2026-05-08
+
+### Fixed
+- Fix Firefox webdriver fallback in DownloadEgms
+- Fix EGMS release tags after portal retired 2018_2022
+
+### Changed
+- Bump version to 0.12.2
+- Retry CSV delete after pyarrow streaming reader close on Windows
+- Stream csv2parquet conversion to bound RAM use
+- Launch Chrome incognito to avoid cross-run state corruption
+- Replace mouse-position alignment loop with fixed pan-settle delay
+- Use comma-separated lat,lon for address-search and drop Escape
+- Reset address-search field per polygon corner and dismiss autocomplete
+- Dump screenshot+page source on polygon-draw failure paths
+- Surface search_egms exceptions with traceback and proper error code
+- Bump selenium to 4.21.0 and bundle Selenium Manager in PyInstaller build
+- Plugin: Update version to 0.7.97
+- Plugin: Update EGMS release labels to 2019-2023 / 2020-2024
+
+
 ## [0.12.1] - 2026-04-01
 
 ### Added
