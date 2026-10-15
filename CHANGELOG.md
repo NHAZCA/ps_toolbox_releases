@@ -6,6 +6,19 @@ All notable changes to PS Toolbox will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.3] - 2026-10-15
+
+### Added
+- Polarization parameter for Format XML output (HH/HV/VH/VV); previously always written as HH
+- Plugin: Polarization selector in the Format dataset UI, preselected from date column suffixes (e.g. `D20200101_VV`) and enabled only for Egeos/ARPA output
+- AOI attribute validation with a clear error message for ARPA format
+
+### Fixed
+- Date columns with polarization suffixes (`_VV`, `_VH`, `_HV`, `_HH`, or any other `_suffix`) breaking Format, New Reference Point and Vectorial Decomposition
+- Swapped field indexes in vectorial decomposition
+- IndexError in vectorial decomposition when ascending and descending grids share no cells
+
+
 ## [Plugin 0.7.98] - 2026-06-03
 
 ### Fixed
