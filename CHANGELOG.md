@@ -6,6 +6,21 @@ All notable changes to PS Toolbox will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.4] - 2026-11-05
+
+### Added
+- Download EGMS: release 2020-2025, selected by default
+- Download EGMS: a log line and a page dump (screenshot and HTML in the system temp folder) when a search finds no links
+
+### Changed
+- Download EGMS: the release boxes are now 2020-2024 and 2020-2025, the two releases the EGMS portal offers. Local files of older releases, such as 2019-2023, load under the older box
+- Plugin: Download EGMS dialog shows the new release boxes, with 2020-2025 ticked by default
+
+### Fixed
+- Download EGMS: the default run failed because the portal no longer offers 2019-2023
+- Download EGMS: crash when the save folder does not exist
+
+
 ## [0.12.3] - 2026-10-15
 
 ### Added
